@@ -1,7 +1,14 @@
 $primary-color: #2227;
 $accent-color: #ff652f;
 $text-color: #fff;
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700,
+);
 
 body {
     background: $accent-color;
+    font-weight: map-get($font-weights, $bold);
+    color: $text-color;
 }
