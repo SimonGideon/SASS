@@ -1,3 +1,15 @@
 body {
-  background: #ff652f;
+  background: rgba(34, 34, 34, 0.4666666667);
+  color: #fff;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+.main .main_paragaraph {
+  font-weight: 700;
+}
+.main .main_paragaraph:hover {
+  color: gree;
 }/*# sourceMappingURL=main.css.map */
