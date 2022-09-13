@@ -22,6 +22,11 @@
     
 }
 
+@mixin mobile {
+    @media (max-width: $mobile){
+        @content;
+    }
+}
 body {
     background: $primary-color;
     color: $text-color;
@@ -31,11 +36,22 @@ body {
     margin: 0 auto;
     @include flexCenter(row);
 
-    #{&}_paragaraph{
+    #{&}_paragaraph1{
         font-weight: weight(bold);
         &:hover {
             color: gree;
         }
+    }
+
+    #{&}_paragraph2 {
+        @extend .main_paragraph1;
+        &:hover{
+            color: $accent-color ;
+        }
+    }
+
+    @include mobile{
+        flex-direction: column;
     }
 }
 

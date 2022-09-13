@@ -17,11 +17,16 @@ body {
   align-items: center;
   flex-direction: row;
 }
-.main .main_paragaraph {
+.main .main_paragaraph1 {
   font-weight: 700;
 }
-.main .main_paragaraph:hover {
+.main .main_paragaraph1:hover {
   color: gree;
+}
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
 }
 
 .light {
