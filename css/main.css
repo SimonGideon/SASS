@@ -22,4 +22,9 @@ body {
 }
 .main .main_paragaraph:hover {
   color: gree;
+}
+
+.light {
+  background-color: rgba(255, 255, 255, 0.4666666667);
+  color: black;
 }/*# sourceMappingURL=main.css.map */

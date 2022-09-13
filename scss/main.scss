@@ -13,6 +13,15 @@
     flex-direction: $direction;
 }
 
+// light and dark theme
+@mixin  theme ($light-theme: true){
+    @if $light-theme {
+        background-color: lighten($primary-color, 100%);
+        color: darken($text-color, 100%);
+}
+    
+}
+
 body {
     background: $primary-color;
     color: $text-color;
@@ -29,3 +38,8 @@ body {
         }
     }
 }
+
+// class for theme
+ .light {
+    @include theme($light-theme: true)
+ }
