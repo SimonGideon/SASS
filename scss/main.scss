@@ -1,11 +1,7 @@
-$primary-color: #2227;
-$accent-color: #ff652f;
-$text-color: #fff;
-$font-weights: (
-    "regular": 400,
-    "medium": 500,
-    "bold": 700,
-);
+// resets
+@import './resets';
+@import './variable';
+
 
 body {
     background: $primary-color;
