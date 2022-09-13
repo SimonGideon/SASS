@@ -2,6 +2,16 @@
 @import './resets';
 @import './variable';
 
+@function weight ($weight-name){
+    @return map-get($font-weights, $weight-name)
+}
+
+@mixin  flexCenter ($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
 
 body {
     background: $primary-color;
@@ -10,9 +20,10 @@ body {
 .main {
     width: 80%;
     margin: 0 auto;
+    @include flexCenter(row);
 
     #{&}_paragaraph{
-        font-weight: map-get($font-weights, bold);
+        font-weight: weight(bold);
         &:hover {
             color: gree;
         }
