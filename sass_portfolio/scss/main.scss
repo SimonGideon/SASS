@@ -1,4 +1,5 @@
 @import 'config';
+@import 'home';
 
 body {
     background: $primary-color;
@@ -27,4 +28,26 @@ header {
 main {
     height: 100%;
     width: 100%;
+
+    .social-icons {
+        position: fixed;
+        bottom: 1rem;
+        left: 1 rem;
+        a {
+            padding: 0.4 rem;
+            @include transition-ease
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
 }
+
+footer {
+    font-size: 1 rem;
+    position: fixed;
+    bottom: 0.4rem;
+    right: 1rem;
+    color: #fff;
+}
+
