@@ -1,0 +1,25 @@
+@import 'config';
+
+body {
+    background: $primary-color;
+    color: #fff;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+}
+
+h1, h2, h3 {
+    font-weight: 400;;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 1rem;
+}
